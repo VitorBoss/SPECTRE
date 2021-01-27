@@ -36,56 +36,56 @@ F 3 "" H 3250 1090 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6350 1250 6300 1250
+	6350 1400 6300 1400
 Wire Wire Line
-	6450 1250 6550 1250
-Text GLabel 6300 1700 3    50   Output ~ 0
+	6450 1400 6550 1400
+Text GLabel 6300 1850 3    50   Output ~ 0
 PWR_GND
-Text GLabel 10900 1250 3    50   Input ~ 0
+Text GLabel 10900 1400 3    50   Input ~ 0
 INJ2-OUT
-Text GLabel 9150 1250 3    50   Input ~ 0
+Text GLabel 9150 1400 3    50   Input ~ 0
 INJ3-OUT
-Text GLabel 9650 1250 3    50   Input ~ 0
+Text GLabel 9650 1400 3    50   Input ~ 0
 INJ1-OUT
-Text GLabel 8750 1250 3    50   Input ~ 0
+Text GLabel 8750 1400 3    50   Input ~ 0
 INJ4-OUT
-Text GLabel 9050 2150 3    50   Input ~ 0
+Text GLabel 9050 2300 3    50   Input ~ 0
 IDLE2-OUT
-Text GLabel 8200 1250 3    50   Input ~ 0
+Text GLabel 8200 1400 3    50   Input ~ 0
 FUEL_PUMP
-Text GLabel 7750 1250 3    50   Input ~ 0
+Text GLabel 7750 1400 3    50   Input ~ 0
 FAN
-Text GLabel 7500 1250 3    50   Input ~ 0
+Text GLabel 7500 1400 3    50   Input ~ 0
 IGN1-OUT
-Text GLabel 9550 1250 3    50   Input ~ 0
+Text GLabel 9550 1400 3    50   Input ~ 0
 IGN2-OUT
-Text GLabel 10100 1250 3    50   Input ~ 0
+Text GLabel 10100 1400 3    50   Input ~ 0
 IGN3-OUT
-Text GLabel 10500 1250 3    50   Input ~ 0
+Text GLabel 10500 1400 3    50   Input ~ 0
 IGN4-OUT
-Text GLabel 6400 2150 3    50   Input ~ 0
+Text GLabel 6400 2300 3    50   Input ~ 0
 STEP_1A_OUT
-Text GLabel 7800 2200 3    50   Input ~ 0
+Text GLabel 7800 2350 3    50   Input ~ 0
 STEP_1B_OUT
-Text GLabel 10200 1250 3    50   Input ~ 0
+Text GLabel 10200 1400 3    50   Input ~ 0
 5V
-Text GLabel 8850 1250 3    50   Output ~ 0
+Text GLabel 8850 1400 3    50   Output ~ 0
 MAP
-Text GLabel 8000 1250 3    50   Output ~ 0
+Text GLabel 8000 1400 3    50   Output ~ 0
 IAT
-Text GLabel 9050 1250 3    50   Output ~ 0
+Text GLabel 9050 1400 3    50   Output ~ 0
 CLT
-Text GLabel 8650 1250 3    50   Output ~ 0
+Text GLabel 8650 1400 3    50   Output ~ 0
 O2
-Text GLabel 9950 1250 3    50   Output ~ 0
+Text GLabel 9950 1400 3    50   Output ~ 0
 TPS
-Text GLabel 10800 1250 3    50   Output ~ 0
+Text GLabel 10800 1400 3    50   Output ~ 0
 VR1+
-Text GLabel 10600 1250 3    50   Output ~ 0
+Text GLabel 10600 1400 3    50   Output ~ 0
 VR2+
-Text GLabel 10400 1250 3    50   Output ~ 0
+Text GLabel 10400 1400 3    50   Output ~ 0
 VR2-
-Text GLabel 10700 1250 3    50   Output ~ 0
+Text GLabel 10700 1400 3    50   Output ~ 0
 VR1-
 $Comp
 L Speeduino_base-eagle-import:GND #SUPPLY011
@@ -122,39 +122,39 @@ F 3 "" H 2300 1150 50  0001 C CNN
 $EndComp
 Text Label 2150 1600 0    10   ~ 0
 GND
-Text GLabel 11200 1250 3    50   Input ~ 0
+Text GLabel 11200 1400 3    50   Input ~ 0
 3.3V
-Text GLabel 11350 2050 3    50   Output ~ 0
+Text GLabel 11350 2200 3    50   Output ~ 0
 FLEX_FUEL_IN
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP8
 U 1 1 5E1C71B1
-P 8800 2100
-F 0 "JP8" H 8800 2213 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 8800 2304 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 8800 2100 50  0001 C CNN
-F 3 "~" H 8800 2100 50  0001 C CNN
-	1    8800 2100
+P 8800 2250
+F 0 "JP8" H 8800 2363 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 8800 2454 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 8800 2250 50  0001 C CNN
+F 3 "~" H 8800 2250 50  0001 C CNN
+	1    8800 2250
 	-1   0    0    1   
 $EndComp
-Text GLabel 7100 2100 3    50   Input ~ 0
+Text GLabel 7100 2250 3    50   Input ~ 0
 STEP_2B_OUT
-Text GLabel 6900 2100 3    50   Input ~ 0
+Text GLabel 6900 2250 3    50   Input ~ 0
 IDLE1-OUT
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP5
 U 1 1 5E1C773E
-P 6650 2050
-F 0 "JP5" H 6650 2163 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 6650 2254 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 6650 2050 50  0001 C CNN
-F 3 "~" H 6650 2050 50  0001 C CNN
-	1    6650 2050
+P 6650 2200
+F 0 "JP5" H 6650 2313 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 6650 2404 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 6650 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
 	-1   0    0    1   
 $EndComp
-Text GLabel 8550 2150 3    50   Input ~ 0
+Text GLabel 8550 2300 3    50   Input ~ 0
 STEP_2A_OUT
-Text GLabel 7200 1250 3    50   Output ~ 0
+Text GLabel 7200 1400 3    50   Output ~ 0
 BARO
 $Comp
 L Speeduino_base-eagle-import:SMD-RES-470R-5%-1_10W(0603) R20
@@ -180,43 +180,43 @@ F 3 "" H 850 1850 50  0001 C CNN
 	1    850  1850
 	0    1    1    0   
 $EndComp
-Text GLabel 6550 1450 3    50   Output ~ 0
+Text GLabel 6550 1600 3    50   Output ~ 0
 VBAT
 Wire Wire Line
-	6300 1700 6300 1500
-Connection ~ 6300 1250
+	6300 1850 6300 1650
+Connection ~ 6300 1400
 Wire Wire Line
-	6300 1250 6250 1250
+	6300 1400 6250 1400
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 60F5F3A4
-P 6300 1500
-F 0 "#FLG04" H 6300 1575 50  0001 C CNN
-F 1 "PWR_FLAG" V 6300 1627 50  0000 L CNN
-F 2 "" H 6300 1500 50  0001 C CNN
-F 3 "~" H 6300 1500 50  0001 C CNN
-	1    6300 1500
+P 6300 1650
+F 0 "#FLG04" H 6300 1725 50  0001 C CNN
+F 1 "PWR_FLAG" V 6300 1777 50  0000 L CNN
+F 2 "" H 6300 1650 50  0001 C CNN
+F 3 "~" H 6300 1650 50  0001 C CNN
+	1    6300 1650
 	0    -1   -1   0   
 $EndComp
-Connection ~ 6300 1500
+Connection ~ 6300 1650
 Wire Wire Line
-	6300 1500 6300 1250
+	6300 1650 6300 1400
 $Comp
 L power:PWR_FLAG #FLG05
 U 1 1 60F5F9DF
-P 6550 1400
-F 0 "#FLG05" H 6550 1475 50  0001 C CNN
-F 1 "PWR_FLAG" V 6550 1527 50  0000 L CNN
-F 2 "" H 6550 1400 50  0001 C CNN
-F 3 "~" H 6550 1400 50  0001 C CNN
-	1    6550 1400
+P 6550 1550
+F 0 "#FLG05" H 6550 1625 50  0001 C CNN
+F 1 "PWR_FLAG" V 6550 1677 50  0000 L CNN
+F 2 "" H 6550 1550 50  0001 C CNN
+F 3 "~" H 6550 1550 50  0001 C CNN
+	1    6550 1550
 	0    -1   -1   0   
 $EndComp
-Connection ~ 6550 1400
+Connection ~ 6550 1550
 Wire Wire Line
-	6550 1400 6550 1450
+	6550 1550 6550 1600
 Wire Wire Line
-	6550 1250 6550 1400
+	6550 1400 6550 1550
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 610DAD79
@@ -315,13 +315,13 @@ Wire Wire Line
 	1000 2150 850  2150
 Wire Wire Line
 	850  2150 850  2050
-Text GLabel 9800 2150 3    50   Input ~ 0
+Text GLabel 9800 2300 3    50   Input ~ 0
 GND
-Text GLabel 9400 1250 3    50   Input ~ 0
+Text GLabel 9400 1400 3    50   Input ~ 0
 GND
-Text GLabel 9750 1250 3    50   Input ~ 0
+Text GLabel 9750 1400 3    50   Input ~ 0
 GND
-Text GLabel 11300 1250 3    50   Input ~ 0
+Text GLabel 11300 1400 3    50   Input ~ 0
 BOOST-OUT
 Wire Wire Line
 	2650 1600 2800 1600
@@ -354,11 +354,11 @@ Wire Wire Line
 	2300 900  2500 900 
 Wire Wire Line
 	3100 900  3250 900 
-Text GLabel 7000 1250 3    50   Input ~ 0
+Text GLabel 7000 1400 3    50   Input ~ 0
 INJ6-OUT
-Text GLabel 6900 1250 3    50   Input ~ 0
+Text GLabel 6900 1400 3    50   Input ~ 0
 INJ5-OUT
-Text GLabel 6800 1250 3    50   Input ~ 0
+Text GLabel 6800 1400 3    50   Input ~ 0
 INJ7-OUT
 $Comp
 L Speeduino_base-eagle-import:?1812L F2
@@ -384,26 +384,26 @@ Text GLabel 750  950  0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	750  950  850  950 
-Text GLabel 6650 1250 3    50   Input ~ 0
+Text GLabel 6650 1400 3    50   Input ~ 0
 INJ8-OUT
 Wire Wire Line
-	6400 2150 6400 2050
+	6400 2300 6400 2200
 Wire Wire Line
-	6400 2050 6450 2050
+	6400 2200 6450 2200
 Wire Wire Line
-	6850 2050 6900 2050
+	6850 2200 6900 2200
 Wire Wire Line
-	6900 2050 6900 2100
+	6900 2200 6900 2250
 Wire Wire Line
-	9000 2100 9050 2100
+	9000 2250 9050 2250
 Wire Wire Line
-	9050 2100 9050 2150
+	9050 2250 9050 2300
 Wire Wire Line
-	8600 2100 8550 2100
+	8600 2250 8550 2250
 Wire Wire Line
-	8550 2100 8550 2150
+	8550 2250 8550 2300
 Wire Wire Line
-	7100 1250 7100 1900
+	7100 1400 7100 2050
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5E7B7B17
@@ -415,7 +415,7 @@ F 3 "~" H 2050 900 50  0001 C CNN
 	1    2050 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 8300 1250 3    50   Output ~ 0
+Text GLabel 8300 1400 3    50   Output ~ 0
 AIN_3
 $Comp
 L Device:D_Zener_Small D6
@@ -443,13 +443,13 @@ F 3 "" H 2350 2350 50  0001 C CNN
 $EndComp
 Text GLabel 2400 1850 0    50   Input ~ 0
 3.3V
-Text GLabel 9250 1250 3    50   BiDi ~ 0
+Text GLabel 9250 1400 3    50   BiDi ~ 0
 CANH
-Text GLabel 11050 1250 3    50   BiDi ~ 0
+Text GLabel 11050 1400 3    50   BiDi ~ 0
 CANL
-Text GLabel 8450 1250 3    50   Input ~ 0
+Text GLabel 8450 1400 3    50   Input ~ 0
 RS232_TX
-Text GLabel 9850 1250 3    50   Output ~ 0
+Text GLabel 9850 1400 3    50   Output ~ 0
 RS232_RX
 $Comp
 L Reference_Voltage:TL431DBZ U3
@@ -581,175 +581,175 @@ Wire Wire Line
 	4150 900  4150 1000
 Wire Wire Line
 	4150 1200 4150 1300
-Text GLabel 7600 1250 3    50   Output ~ 0
+Text GLabel 7600 1400 3    50   Output ~ 0
 AIN_2
-Text GLabel 8100 1250 3    50   Output ~ 0
+Text GLabel 8100 1400 3    50   Output ~ 0
 AIN_1
 Wire Wire Line
 	3850 900  4150 900 
 Wire Wire Line
-	7900 1900 8800 1900
+	7900 2050 8800 2050
 Wire Wire Line
-	8800 1900 8800 1950
+	8800 2050 8800 2100
 Wire Wire Line
-	7900 1250 7900 1900
+	7900 1400 7900 2050
 Wire Wire Line
-	6650 1900 7100 1900
-Text GLabel 7600 2100 3    50   Input ~ 0
+	6650 2050 7100 2050
+Text GLabel 7600 2250 3    50   Input ~ 0
 Spare_2-Out
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP6
 U 1 1 5F619C00
-P 7350 2050
-F 0 "JP6" H 7350 2163 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 7350 2254 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 7350 2050 50  0001 C CNN
-F 3 "~" H 7350 2050 50  0001 C CNN
-	1    7350 2050
+P 7350 2200
+F 0 "JP6" H 7350 2313 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 7350 2404 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 7350 2200 50  0001 C CNN
+F 3 "~" H 7350 2200 50  0001 C CNN
+	1    7350 2200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7550 2050 7600 2050
+	7550 2200 7600 2200
 Wire Wire Line
-	7600 2050 7600 2100
+	7600 2200 7600 2250
 Wire Wire Line
-	7150 2050 7100 2050
+	7150 2200 7100 2200
 Wire Wire Line
-	7100 2050 7100 2100
-Text GLabel 8300 2200 3    50   Input ~ 0
+	7100 2200 7100 2250
+Text GLabel 8300 2350 3    50   Input ~ 0
 Spare_1-Out
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP7
 U 1 1 5F66DD1B
-P 8050 2150
-F 0 "JP7" H 8050 2263 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 8050 2354 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 8050 2150 50  0001 C CNN
-F 3 "~" H 8050 2150 50  0001 C CNN
-	1    8050 2150
+P 8050 2300
+F 0 "JP7" H 8050 2413 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 8050 2504 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 8050 2300 50  0001 C CNN
+F 3 "~" H 8050 2300 50  0001 C CNN
+	1    8050 2300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8250 2150 8300 2150
+	8250 2300 8300 2300
 Wire Wire Line
-	8300 2150 8300 2200
+	8300 2300 8300 2350
 Wire Wire Line
-	7850 2150 7800 2150
+	7850 2300 7800 2300
 Wire Wire Line
-	7800 2150 7800 2200
+	7800 2300 7800 2350
 Wire Wire Line
-	7300 1250 7300 1900
+	7300 1400 7300 2050
 Wire Wire Line
-	7300 1900 7350 1900
+	7300 2050 7350 2050
 Wire Wire Line
-	8050 2000 7500 2000
+	8050 2150 7500 2150
 Wire Wire Line
-	7500 2000 7500 1750
+	7500 2150 7500 1900
 Wire Wire Line
-	7500 1750 7400 1750
+	7500 1900 7400 1900
 Wire Wire Line
-	7400 1750 7400 1250
+	7400 1900 7400 1400
 Wire Wire Line
 	4150 1300 3850 1300
 Connection ~ 3850 1300
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP18
 U 1 1 5F36B798
-P 9550 2100
-F 0 "JP18" H 9550 2213 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 9550 2304 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 9550 2100 50  0001 C CNN
-F 3 "~" H 9550 2100 50  0001 C CNN
-	1    9550 2100
+P 9550 2250
+F 0 "JP18" H 9550 2363 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 9550 2454 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 9550 2250 50  0001 C CNN
+F 3 "~" H 9550 2250 50  0001 C CNN
+	1    9550 2250
 	-1   0    0    1   
 $EndComp
-Text GLabel 9350 2200 3    50   Input ~ 0
+Text GLabel 9350 2350 3    50   Input ~ 0
 IGN5-OUT
 Wire Wire Line
-	9350 2100 9350 2200
+	9350 2250 9350 2350
 Wire Wire Line
-	9750 2100 9800 2100
+	9750 2250 9800 2250
 Wire Wire Line
-	9800 2100 9800 2150
+	9800 2250 9800 2300
 Wire Wire Line
-	9550 1950 9000 1950
+	9550 2100 9000 2100
 Wire Wire Line
-	9000 1950 9000 1750
+	9000 2100 9000 1900
 Wire Wire Line
-	9000 1750 8550 1750
+	9000 1900 8550 1900
 Wire Wire Line
-	8550 1750 8550 1250
-Text GLabel 11400 1250 3    50   Input ~ 0
+	8550 1900 8550 1400
+Text GLabel 11400 1400 3    50   Input ~ 0
 TACHO-OUT
-Text GLabel 10450 2150 3    50   Input ~ 0
+Text GLabel 10450 2300 3    50   Input ~ 0
 GND
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP16
 U 1 1 5F462689
-P 10200 2100
-F 0 "JP16" H 10200 2213 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 10200 2304 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 10200 2100 50  0001 C CNN
-F 3 "~" H 10200 2100 50  0001 C CNN
-	1    10200 2100
+P 10200 2250
+F 0 "JP16" H 10200 2363 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 10200 2454 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 10200 2250 50  0001 C CNN
+F 3 "~" H 10200 2250 50  0001 C CNN
+	1    10200 2250
 	-1   0    0    1   
 $EndComp
-Text GLabel 10000 2200 3    50   Input ~ 0
+Text GLabel 10000 2350 3    50   Input ~ 0
 IGN6-OUT
 Wire Wire Line
-	10000 2100 10000 2200
+	10000 2250 10000 2350
 Wire Wire Line
-	10400 2100 10450 2100
+	10400 2250 10450 2250
 Wire Wire Line
-	10450 2100 10450 2150
+	10450 2250 10450 2300
 Wire Wire Line
-	10200 1950 10200 1850
+	10200 2100 10200 2000
 Wire Wire Line
-	10200 1850 9050 1850
+	10200 2000 9050 2000
 Wire Wire Line
-	9050 1850 9050 1550
+	9050 2000 9050 1700
 Wire Wire Line
-	9050 1550 8950 1550
+	9050 1700 8950 1700
 Wire Wire Line
-	8950 1550 8950 1250
+	8950 1700 8950 1400
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP15
 U 1 1 60523368
-P 11100 2000
-F 0 "JP15" H 11100 2113 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 11100 2204 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 11100 2000 50  0001 C CNN
-F 3 "~" H 11100 2000 50  0001 C CNN
-	1    11100 2000
+P 11100 2150
+F 0 "JP15" H 11100 2263 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 11100 2354 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 11100 2150 50  0001 C CNN
+F 3 "~" H 11100 2150 50  0001 C CNN
+	1    11100 2150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10900 2000 10900 2100
+	10900 2150 10900 2250
 Wire Wire Line
-	11300 2000 11350 2000
+	11300 2150 11350 2150
 Wire Wire Line
-	11350 2000 11350 2050
+	11350 2150 11350 2200
 Wire Wire Line
-	11100 1850 10300 1850
+	11100 2000 10300 2000
 Wire Wire Line
-	10300 1850 10300 1250
-Text GLabel 10900 2100 3    50   Output ~ 0
+	10300 2000 10300 1400
+Text GLabel 10900 2250 3    50   Output ~ 0
 BOOT0_EXT
 Connection ~ 850  1650
 $Comp
-L Speeduino_base-rescue:molex_48pin-molex_48pin U4
-U 1 1 5FFFB3E6
-P 9250 1800
-F 0 "U4" V 10537 2205 60  0000 C CNN
-F 1 "molex_48pin" V 10431 2205 60  0000 C CNN
-F 2 "Speeduino_base:Molex_48" H 9250 1800 60  0001 C CNN
-F 3 "" H 9250 1800 60  0001 C CNN
-	1    9250 1800
+L speeduino_lib:molex_48pin U4
+U 1 1 5E17AB54
+P 9250 1950
+F 0 "U4" V 10537 2355 60  0000 C CNN
+F 1 "molex_48pin" V 10431 2355 60  0000 C CNN
+F 2 "Speeduino_base:Molex_48" H 9250 1950 60  0001 C CNN
+F 3 "" H 9250 1950 60  0001 C CNN
+	1    9250 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN4
-U 4 1 60691A24
+U 4 1 605B254B
 P 15150 7450
 F 0 "RN4" V 14943 7450 50  0000 C CNN
 F 1 "10K" V 15034 7450 50  0000 C CNN
@@ -760,7 +760,7 @@ F 3 "~" H 15150 7450 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN3
-U 4 1 606918EF
+U 4 1 605B002B
 P 14800 7300
 F 0 "RN3" V 14593 7300 50  0000 C CNN
 F 1 "100R" V 14684 7300 50  0000 C CNN
@@ -815,7 +815,7 @@ F 3 "~" H 14800 5600 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN4
-U 1 1 605B254B
+U 1 1 60691A24
 P 15150 4900
 F 0 "RN4" V 14943 4900 50  0000 C CNN
 F 1 "10K" V 15034 4900 50  0000 C CNN
@@ -826,7 +826,7 @@ F 3 "~" H 15150 4900 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN3
-U 1 1 605B002B
+U 1 1 606918EF
 P 14800 4750
 F 0 "RN3" V 14593 4750 50  0000 C CNN
 F 1 "100R" V 14684 4750 50  0000 C CNN
@@ -837,7 +837,7 @@ F 3 "~" H 14800 4750 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN2
-U 4 1 60539A0F
+U 4 1 604CAA21
 P 15150 4050
 F 0 "RN2" V 14943 4050 50  0000 C CNN
 F 1 "10K" V 15034 4050 50  0000 C CNN
@@ -848,7 +848,7 @@ F 3 "~" H 15150 4050 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN1
-U 4 1 60537A2D
+U 4 1 604C862E
 P 14800 3900
 F 0 "RN1" V 14593 3900 50  0000 C CNN
 F 1 "100R" V 14684 3900 50  0000 C CNN
@@ -859,7 +859,7 @@ F 3 "~" H 14800 3900 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN2
-U 3 1 604CAA21
+U 3 1 6017B5D6
 P 15200 3200
 F 0 "RN2" V 14993 3200 50  0000 C CNN
 F 1 "10K" V 15084 3200 50  0000 C CNN
@@ -870,7 +870,7 @@ F 3 "~" H 15200 3200 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN1
-U 3 1 604C862E
+U 3 1 6017B5D5
 P 14850 3050
 F 0 "RN1" V 14643 3050 50  0000 C CNN
 F 1 "100R" V 14734 3050 50  0000 C CNN
@@ -1313,7 +1313,7 @@ F 3 "~" H 13100 4050 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN8
-U 1 1 6165711B
+U 1 1 61662EFE
 P 13100 4900
 F 0 "RN8" V 12893 4900 50  0000 C CNN
 F 1 "10K" V 12984 4900 50  0000 C CNN
@@ -1370,7 +1370,7 @@ Wire Wire Line
 	12850 3150 12950 3150
 $Comp
 L Device:R_Pack04_Split RN8
-U 4 1 61662EFE
+U 4 1 6165711B
 P 13050 2350
 F 0 "RN8" V 12843 2350 50  0000 C CNN
 F 1 "10K" V 12934 2350 50  0000 C CNN
@@ -1381,7 +1381,7 @@ F 3 "~" H 13050 2350 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN7
-U 4 1 61660F60
+U 4 1 615DFE51
 P 12850 4700
 F 0 "RN7" H 12938 4746 50  0000 L CNN
 F 1 "100R" H 12938 4655 50  0000 L CNN
@@ -1414,7 +1414,7 @@ F 3 "~" H 12400 1300 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN7
-U 1 1 615DFE51
+U 1 1 61660F60
 P 12450 2200
 F 0 "RN7" V 12243 2200 50  0000 C CNN
 F 1 "100R" V 12334 2200 50  0000 C CNN
@@ -2939,7 +2939,7 @@ Wire Wire Line
 	2000 10600 2100 10600
 $Comp
 L Device:R_Pack04_Split RN6
-U 4 1 6092FFBA
+U 4 1 607DEF00
 P 1850 8850
 F 0 "RN6" V 1643 8850 50  0000 C CNN
 F 1 "9K1" V 1734 8850 50  0000 C CNN
@@ -2972,7 +2972,7 @@ F 3 "~" H 1850 10950 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN6
-U 1 1 607DEF00
+U 1 1 6092FFBA
 P 1850 7850
 F 0 "RN6" V 1643 7850 50  0000 C CNN
 F 1 "9K1" V 1734 7850 50  0000 C CNN
@@ -4876,4 +4876,5 @@ Wire Wire Line
 	9700 10250 9900 10250
 Wire Wire Line
 	9600 10250 9700 10250
+Connection ~ 6550 1400
 $EndSCHEMATC
