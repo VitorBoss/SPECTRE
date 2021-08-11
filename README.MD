@@ -1,23 +1,29 @@
 # Project SPECTRE
-Project SPECTRE	(Speeduino PrintEd Circuit board TjeeRdiE). This is a PCB with the hardware to run speeduino on a STM32F407VE6T board from ebay. (Or a STM32 BLACK_F407VE as it is sometimes called). Schematics and more information on the cpu board can be found here: (https://github.com/mcauser/BLACK_F407VE) The case with connectors can be found here: https://nl.aliexpress.com/item/32839361268.html?spm=a2g0z.12010615.8148356.7.1da330edPBhz16
+Project SPECTRE	(Speeduino PrintEd Circuit board TjeeRdiE). This is a PCB with the hardware to run speeduino on a STM32F407VE6T board from ebay. (Or a STM32 BLACK_F407VE as it is sometimes called). 
+
+Schematics and more information on the cpu board can be found here: (https://github.com/mcauser/BLACK_F407VE)
+
+The case with connectors can be found here: https://nl.aliexpress.com/item/32839361268.html?spm=a2g0z.12010615.8148356.7.1da330edPBhz16
 
 Latest version is 0.5.2
 
-A stand alone Peak and Hold injector driver board is now seperate. See: https://github.com/Tjeerdie/Peak-And-hold-Driver
+A stand alone Peak and Hold injector driver board is now in a seperate repository. See: https://github.com/Tjeerdie/Peak-And-hold-Driver
 
 ## Getting Started
 Take a look at the very informative manual for speeduino:
 https://speeduino.com/Speeduino_manual.pdf
+
+There is a difference for the TPS with respect to the manual. The TPS must be fed by 3.3V and not 5V like the other speeduino boards. For best performance it is better to wire all the grounds of the sensors to the GND pins and not use the PWR_GND or carchassis for this. 
 
 How to load the firmware to the STM32 see:
 https://speeduino.com/forum/viewtopic.php?f=13&t=1914&p=26572#p26572
 
 ## Board pinout
 
-The TS Mapping column is the pin you enter in the "Local Auxillary Input Channel Configuration" when repurposing the input pins for another purpose (ex. oil pressure sensor):
+The TS Mapping column is the pin you enter in the "Local Auxillary Input Channel Configuration" when repurposing the input pins for another purpose (example: oil pressure sensor):
 https://speeduino.com/forum/viewtopic.php?f=14&t=2809
 
-| Pin# | Function   | Alternative | Switch | TS Mapping |
+| Pin# | Function   | Alternative | Switch | Tuner Studio Mapping |
 |-----|-------------|-------------|--------|------------|
 | 1   | GND_PWR     |             |        |            |
 | 2   | GND_PWR     |             |        |            |
@@ -68,23 +74,49 @@ https://speeduino.com/forum/viewtopic.php?f=14&t=2809
 | 47  | BOOST-OUT   |             |        |            |
 | 48  | TACHO-OUT   |             |        |            |
 
+## Jumper settings
+There are 12 jumpers on the board to set/change various hardware configurations to suit your needs. with a sharp object scratch away the default bridge and use a solder bridge between the alternative configuration pins. The pull up resitors (JP1/JP4) are briged vs non bridged and no need to skratch anything away.
+| JP# | Function                  | Default       | Alternative|
+|-----|---------------------------|---------------|------------|
+| 1   | Halleffect Pullup resistor| Not Conneced  | Connected  |
+| 2   | Halleffect or VR input VR1| VR            | Hall       |
+| 3   | Halleffect or VR input VR2| Hall          | VR         |
+| 4   | Halleffect Pullup resistor| Not Conneced  | Connected  |
+| 5   | STEP_1A_out or IDLE1-OUT  | IDLE1-OUT     | STEP_1A_OUT|
+| 6   | Spare_2_out or Step_2B_OUT| Spare_2_out   | Step_2B_OUT|
+| 7   | Spare_1_Out or Step_1B_OUT| Spare_1_Out   | Step_1B_OUT|
+| 8   | IDLE2-OUT or STEP_2A_OUT  | IDLE2-OUT     | STEP_2A_OUT|
+| 10  | Tacho out voltage		  | 5V output     | 12V output |
+| 15  | Flex fuel or Boot0 in     | Flexfuel      | Boot0      |
+| 16  | Ignition 6 or GND         | GND           | IGN6       |
+| 18  | Ignition 6 or GND   _     | GND           | IGN7       |
 
-## Information on building a V0.5.2 board
-Information for building and choosing components.
 
-### rs232 and bluetooth
+## Information for assembling a V0.5.X board
+Information for board assembly and choosing components.
+
+### RS232 and bluetooth
 The hardware serial port 1 is shared between bluetooth and RS232 output on the ECU connector. So that means you can only build it with the bluetooth module in place OR the max232 ic in place not both! That will break the communication. 
 
-Dont forget to initialize the bluetooth module to use 115200 bps baudrate using the HC-0X AT commands. 
+Dont forget to configure the bluetooth module to use 115200 bps baudrate using the HC-05/HC-06 AT commands. 
 
-If you want your main/Tuner studio communiation to go over the hardware serial port 1 (So bluetooth or RS232 on the ECU connector). Build the speeduino firmware in the arduino IDE with no "usb support" -> "None". In that case it will default to use hardware serial 1 as the communication.
+If you want your main/Tuner studio communiation to use the hardware serial port 1 (So bluetooth or RS232 on the ECU connector). Build the speeduino firmware in the arduino IDE with no "usb support" -> "None". In that case it will default to use hardware serial 1 as the communication.
 
 If the bluetooth comms are not working and you are using a HC-05 or HC-06 module (both are 3.3v so its safe to direcly connect to the MCU). For V0.5.2 of SPECTRE [R37,R38] can be replaced by 0 ohms. For V0.5.3 [R38] can be replaced by 0 ohm. 
 
 ### Zener diodes
 If you build the board with the injector driver mosfets to be BSP78 [Q10,Q11,Q13,Q14,Q18,Q19,Q20,Q21] you can leave the bzx84C39 + 1N4148 out [33,D34,D35,D36,D37,D38,D39,D40,D41,D42,D43,D44,D45,D46,D47,D48]. These are used for clamping, but the BSP78 has internal clamping. You can use other mosfets with SOT223 footprint in place of the BSP78. If these are not clamped or reptetative avalanch rated use the clamping diodes to keep them in spec.
 
-## Tested on V0.5.2
+### Vehicle Speed input
+Here is a scription how to use one of the analog spare inputs (IAT_2 = ECU pin 18) as VSS input for speeduino. This can be a hall type sensor or a porximity sesnsor. it can NOT be a VR type sensor
+1. Remove C2 and C4 from the board
+2. On the MCU pin headers of the board connect PA0 to PA2 with a bit of solder
+3. in Tuner Studio select pin 50 (PA2) for the VSS input pin.
+
+PA0 (pin 48 in TS) can not work as VSS pin because of conflicting interrupts with the crank sensor (PE0)
+
+
+## Tested on V0.5.2/V0.5.3
 The following functions have been tested and confirmed to be working on a volvo B230FK redblock engine. This a 4 cylinder engine with small turbo. A VAG wasted spark coil with internal drivers is used as ignition<br/> 
 
 VR2 input (Trigger 2) [OK]<br/> 
@@ -109,7 +141,7 @@ BOOST output [OK]<br/>
 Stepper idle output [OK]<br/> 
 TACHO out [OK]<br/>
 
-## To be tested on V0.5.2
+## To be tested on V0.5.2/V0.5.3
 BARO <br/>
 CAN bus TX<br/>
 CAN bus RX<br/>
